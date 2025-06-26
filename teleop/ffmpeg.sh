@@ -1,0 +1,1 @@
+ffmpeg -r 10 -i "teleop_hand_3dgs_imgs/left/%d.png" "teleop_hand_3dgs_imgs/left.mp4"
