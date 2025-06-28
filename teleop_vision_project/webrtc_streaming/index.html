@@ -1,0 +1,31 @@
+<!-- teleop_vision_project/3_webrtc_streaming/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stereo Vision Stream</title>
+    <style>
+        body { font-family: sans-serif; background-color: #111; color: #eee; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; }
+        h1 { margin-top: 20px; }
+        #video-container { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 20px; }
+        video { background-color: #000; border: 1px solid #444; width: 48vw; height: auto; }
+        .label { text-align: center; font-size: 1.2em; margin-top: 5px; }
+        #status { margin-top: 20px; font-size: 1em; color: #888; }
+    </style>
+</head>
+<body>
+    <h1>ZED Stereo Camera Feed</h1>
+    <div id="video-container">
+        <div>
+            <video id="left-video" autoplay playsinline></video>
+            <div class="label">Left Eye</div>
+        </div>
+        <div>
+            <video id="right-video" autoplay playsinline></video>
+            <div class="label">Right Eye</div>
+        </div>
+    </div>
+    <div id="status">Status: Disconnected</div>
+
+    <script src="client.js"></script>
+</body>
+</html>
