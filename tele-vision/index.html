@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stereo Vision Feed</title>
+    <style>
+        body { font-family: sans-serif; background-color: #222; color: #fff; text-align: center; }
+        .video-container { display: flex; justify-content: center; gap: 10px; }
+        video { background-color: #000; width: 640px; height: 360px; }
+    </style>
+</head>
+<body>
+    <h1>Stereo Vision Feed</h1>
+    <div class="video-container">
+        <div>
+            <video id="left-video" autoplay muted playsinline></video>
+            <p>Left Eye</p>
+        </div>
+        <div>
+            <video id="right-video" autoplay muted playsinline></video>
+            <p>Right Eye</p>
+        </div>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
